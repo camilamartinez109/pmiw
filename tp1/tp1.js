@@ -1,4 +1,4 @@
-//video: https://youtu.be/pGHTDliQcts
+//video:https://youtu.be/pGHTDliQcts?si=8w5k2huzz6hhWsGp
 let imagenReferencia;
 let cantidadCuadrados = 10;
 let cantidadOriginal = 10;
@@ -157,4 +157,5 @@ function calcularCantidadSegunMouse(posX) {
   if (resultado > 20) resultado = 20;
   return resultado;
 }
+
 
