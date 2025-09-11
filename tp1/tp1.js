@@ -16,7 +16,7 @@ function setup() {
   createCanvas(800, 400);
   rectMode(CENTER);
   imageMode(CORNER);
-  noLoop(); // igual que en Processing
+  noLoop(); 
 }
 
 function draw() {
@@ -113,7 +113,7 @@ function dibujarCuadradosDesplazados(tamaño, dx, dy) {
   rect(ultimaX, ultimaY, tamBlanco, tamBlanco);
 }
 
-// -------- EVENTOS DE TECLADO ----------
+
 function keyPressed() {
   if (key === 'c') {
     invertirColores = !invertirColores;
@@ -138,7 +138,7 @@ function keyPressed() {
   redraw();
 }
 
-// -------- EVENTOS DE MOUSE ----------
+
 function mousePressed() {
   movimientoActivo = true;
 }
@@ -150,10 +150,11 @@ function mouseMoved() {
   }
 }
 
-// -------- FUNCIÓN AUXILIAR ----------
+
 function calcularCantidadSegunMouse(posX) {
   let resultado = int(map(posX, 0, width, 2, 20));
   if (resultado < 2) resultado = 2;
   if (resultado > 20) resultado = 20;
   return resultado;
 }
+
